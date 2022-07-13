@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #6d72233a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+
+.products-container {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 10px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  background-color: #151515;
+  border: 5px solid;
+  border-image:
+  linear-gradient(
+    #ff512f,
+    #dd2476,
+    #1c64ff)1;
+
+  animation: rotate
+  2.5s
+  ease-in
+  infinite;
+}
+@keyframes rotate{
+  60%{
+    border-image:
+    linear-gradient(
+      360deg,
+      #ff512f,
+    #dd2476,
+    #1c64ff) 1;
+  }
+}
+
+img:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.card-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.App{
+  background: linear-gradient(to bottom left, #ffcc99 0%, #003366 100%)
+}
